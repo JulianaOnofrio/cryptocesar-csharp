@@ -5,21 +5,17 @@ public class CesarCypher : ICrypt, IDecrypt
 {
 	private static byte casas = 3;
 
-	
-    public String Crypt(String texto) 
+	public String Crypt(String texto) 
     {
         return GerarTextoCriptografia(texto, true);
     }
 
-
-    public String Decrypt(String texto) 
+	public String Decrypt(String texto) 
     {
         return GerarTextoCriptografia(texto, false);
     }
 
-	
-	
-    public String GerarTextoCriptografia(String texto, bool criptografar) 
+	public String GerarTextoCriptografia(String texto, bool criptografar) 
     {
         
         String textoProcessado = String.Empty;
